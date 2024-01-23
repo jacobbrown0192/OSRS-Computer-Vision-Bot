@@ -11,15 +11,13 @@ from common.break_functions import random_sleep, random_break_action_check, set_
     human_break
 from common.common_functions import start_timer_countdown_loop, break_message, \
     take_mining_screenshot_and_find_color_and_click_rectangle, open_inventory, \
-    find_image_and_click_rectangles, get_inventory
+    find_image_and_click_rectangles, get_inventory, drop_item, release_drop_item
 from common.config import config_init, ConsoleColors
 from common.live_data import LiveDataService, EventCategory
 from common.machine_vision import image_to_text, image_count, Colors
 from common.path_finder import get_path
 from common.resources import BANK_NAMES, bank_locations
 from common.walker import Walker
-from sly_scripts.functions import drop_item
-from sly_scripts.functions import release_drop_item
 
 
 # could make this generic to with a drop and keep lists.

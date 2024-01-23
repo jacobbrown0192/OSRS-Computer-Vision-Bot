@@ -176,6 +176,26 @@ def find_and_click_on_color_in_inventory(color):
         raise Exception('no food in inventory')
 
 
+def drop_item():
+    pyautogui.keyUp('shift')
+    c = random.uniform(0.1, 0.2)
+    d = random.uniform(0.1, 0.23)
+
+    time.sleep(c)
+    pyautogui.keyDown('shift')
+    time.sleep(d)
+
+
+def release_drop_item():
+    e = random.uniform(0.1, 0.3)
+    f = random.uniform(0.1, 0.2)
+
+    time.sleep(e)
+    pyautogui.keyUp('shift')
+    pyautogui.press('shift')
+    time.sleep(f)
+
+
 # TODO Implement this
 def startup():
     print('starting up')
